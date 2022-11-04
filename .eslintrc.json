@@ -24,8 +24,8 @@
     "eslint-plugin-import-helpers"
   ],
   "rules": {
-    "indent": ["error", 2],
-    "quotes": ["error", "single"],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "quotes": ["error", "single", { "avoidEscape": true }],
     "semi": ["error", "never"],
     "no-constant-condition": "warn",
     "no-debugger": "warn",
