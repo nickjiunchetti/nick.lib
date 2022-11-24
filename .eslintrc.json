@@ -8,7 +8,8 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react/jsx-runtime"
+    "plugin:react/jsx-runtime",
+    "plugin:import/recommended"
   ],
   "overrides": [],
   "parser": "@typescript-eslint/parser",
@@ -21,7 +22,8 @@
     "react-hooks",
     "@typescript-eslint",
     "unused-imports",
-    "eslint-plugin-import-helpers"
+    "eslint-plugin-import-helpers",
+    "import"
   ],
   "rules": {
     "indent": ["error", 2, { "SwitchCase": 1 }],
@@ -31,12 +33,11 @@
     "no-debugger": "warn",
     "no-console": "warn",
     "@typescript-eslint/no-extra-semi": "off",
-    "unused-imports/no-unused-imports": "warn",
     "react-hooks/rules-of-hooks": "error",
+    "unused-imports/no-unused-imports": "warn",
     "import-helpers/order-imports": [
       "warn",
       {
-        // example configuration
         "newlinesBetween": "always",
         "groups": ["module", "type", ["parent", "sibling", "index"]],
         "alphabetize": { "order": "asc", "ignoreCase": true }

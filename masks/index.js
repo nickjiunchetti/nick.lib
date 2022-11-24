@@ -12,7 +12,7 @@ export const number = v => {
   if (v) {
     if (!v) v = 0
     v = v.toString()
-    return v.replace(/[^\d]/g, '') // permite apenas numeros
+    return Number(v.replace(/[^\d]/g, '')) // permite apenas numeros
   }
 }
 
